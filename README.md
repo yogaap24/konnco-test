@@ -1,64 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
+  </a>
 </p>
 
-## About Laravel
+## Instalasi Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Langkah pertama, **clone repository** Laravel dari [https://github.com/yogaap24/konnco-test](https://github.com/yogaap24/konnco-test). Setelah berhasil clone, masuk ke direktori proyek dan pastikan **web server Anda aktif**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Langkah kedua, pastikan **Composer terinstal** di sistem Anda. Untuk menginstal semua dependensi PHP yang dibutuhkan, jalankan perintah `composer install --ignore-platform-reqs`.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Langkah ketiga, duplikat file `.env.example` dan ubah namanya menjadi `.env`, atau buat file `.env` baru dengan mengcopy isi dari `.env.example`.
 
-## Learning Laravel
+Langkah keempat, **generate kunci aplikasi Laravel** dengan perintah `php artisan key:generate`. Pastikan file `.env` terkonfigurasi dengan benar, khususnya untuk setup database dan Redis sesuai kebutuhan aplikasi Anda.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Langkah kelima, untuk memastikan koneksi database, jalankan `php artisan db:monitor` dan lakukan **migrasi database** dengan perintah `php artisan migrate --seed` untuk melakukan migrasi database dan seeder.
+> **ℹ️ Info:** kata sandi untuk semua user atau pengguna dari seeder adalah ```password```.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Langkah keenam, **instal Passport untuk autentikasi** dengan `php artisan passport:install --force`. Pastikan semua pertanyaan dijawab dengan `yes`.
 
-## Laravel Sponsors
+> **⚠️ Penting:** Tambahkan atau pastika extension ```pcntl``` ada di php.ini anda terlebih dahulu pada php anda jika anda menggunakan MacOS/Ubunt/WSL. (Extension `pcntl` tidak mendukung windows). 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Langkah ketujuh, untuk **memantau proses pekerjaan latar belakang**, instal Horizon dengan perintah `php artisan horizon:install` dan jalankan dengan `php artisan horizon`.
 
-### Premium Partners
+> **⚠️ Penting:** Horizon **tidak dapat digunakan di Windows**. Jika Anda menggunakan Windows, gunakan WSL (Windows Subsystem for Linux).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Terakhir, pastikan **pekerjaan antrian berjalan** dengan `php artisan queue:work`. Untuk **melakukan pengujian**, jalankan `php artisan test`. Jika Anda menggunakan Windows dan tidak menggunakan WSL, tambahkan opsi `--without-tty` pada perintah pengujian.
 
-## Contributing
+Apabila ingin melakukan test jalankan `php artisan test` (jika di Windows dan tidak pakai WSL jalankan `php artisan test --without-tty`). Dan jangan lupa untuk uncomment baris kode berikut di `phpunit.xml`:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```xml
+<!-- <env name="DB_CONNECTION" value="sqlite"/> -->
+<!-- <env name="DB_DATABASE" value=":memory:"/> -->
+```
 
-## Code of Conduct
+Atau buat file .env.testing dengan nilai:
+```
+DB_CONNECTION=sqlite
+DB_DATABASE=:memory:
+```
+> **⚠️ Penting:** Pastikan php anda memiliki extension sqlite3 dan pdo_sqlite agar bisa melakukan koneksi ke sqlite.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Sisanya bisa diabaikan. Anda bisa memverifikasi apakah database pengujian digunakan dengan menjalankan pengujian di awal sebelum langkah `ke enam` atau sebelum anda menjalankan ```php artisan migrate --seed```.
 
-## Security Vulnerabilities
+Jika Anda ingin mencoba API, Anda bisa melihat dokumentasi di [Postman Documentation](https://documenter.getpostman.com/view/4450235/2sA3XPEPE7) untuk lebih detailnya.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Jika Anda menggunakan Docker, kami telah menyiapkan `docker-compose` dan `Dockerfile`. Anda hanya perlu mengisi konfigurasi berikut pada file `.env`:
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```env
+APP_URL=
+APP_HOST=
+IMAGE_NAME=
+```
+Setelah itu, jalankan perintah berikut untuk memulai layanan Docker:
+```docker-compose up -d```

@@ -49,16 +49,6 @@ class ProcessTransaction implements ShouldQueue
                 $transaction->save();
             }
             DB::commit();
-
-            // Send email to the user
-            $email = $transaction->user->email;
-            $subject = 'Transaction Status';
-            $message = "Your transaction with ID {$transaction->id} has been processed successfully.";
-
-            Mail::raw($message, function ($mail) use ($email, $subject) {
-                $mail->from('konnco@example.com', 'Konnco');
-                $mail->to($email)->subject($subject);
-            });
         } catch (\Exception $e) {
             DB::rollBack();
             throw $e;
