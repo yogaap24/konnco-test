@@ -1,0 +1,45 @@
+stages:
+  - build
+  - database
+
+variables:
+  TAG_STAGING_LATEST: repopo.transtrack.id:5050/regist/regist-server/staging:latest
+
+build:
+  stage: build
+  script:
+    - cp .env.internal.dev .env
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t $TAG_STAGING_LATEST .
+    - docker push $TAG_STAGING_LATEST
+    #    - docker image rm $TAG_STAGING_LATEST
+    - docker pull $TAG_STAGING_LATEST
+    - docker-compose up -d --no-deps --build staging
+    - docker image prune -f
+  tags:
+    - build
+  only:
+    - staging
+
+database-migration:
+  stage: database
+  dependencies:
+    - build
+  script:
+    - docker-compose exec -T --user root staging php artisan migrate
+  tags:
+    - build
+  only:
+    - staging
+
+database-seeding:
+  stage: database
+  dependencies:
+    - build
+  script:
+    - docker-compose exec -T --user root staging php artisan migrate:fresh --seed
+  tags:
+    - build
+  only:
+    - staging
+  when: manual

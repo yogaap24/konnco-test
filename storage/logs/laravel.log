@@ -1,0 +1,268 @@
+[2024-06-13 21:59:19] testing.INFO: Cache miss, setting new cache: transaction_history_29  
+[2024-06-13 21:59:19] testing.INFO: Cache miss, setting new cache: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:19] testing.INFO: Cache miss, setting new cache: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:19] testing.INFO: Cache hit: transaction_history_2  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache hit: transaction_history_1  
+[2024-06-13 21:59:20] testing.INFO: Cache miss, setting new cache: transaction_history_24  
+[2024-06-13 21:59:38] local.INFO: Cache miss, setting new cache: transaction_history_1  
+[2024-06-13 21:59:47] local.INFO: Cache hit: transaction_history_1  
+[2024-06-13 22:01:08] local.ERROR: Call to undefined function Laravel\Horizon\Console\pcntl_async_signals() {"exception":"[object] (Error(code: 0): Call to undefined function Laravel\\Horizon\\Console\\pcntl_async_signals() at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\horizon\\src\\Console\\HorizonCommand.php:50)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Horizon\\Console\\HorizonCommand->handle(Object(Laravel\\Horizon\\Repositories\\RedisMasterSupervisorRepository))
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Horizon\\Console\\HorizonCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2024-06-13 22:03:12] local.ERROR: There are no commands defined in the "queque" namespace.
+
+Did you mean this?
+    queue {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"queque\" namespace.
+
+Did you mean this?
+    queue at D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php:624)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(675): Symfony\\Component\\Console\\Application->findNamespace('queque')
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('queque:work')
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2024-06-13 22:03:22] local.ERROR: The "-d" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-d\" option does not exist. at D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Input\\ArgvInput.php:205)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(107): Symfony\\Component\\Console\\Input\\ArgvInput->addShortOption('d', NULL)
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(84): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption('-d')
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Input\\ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('-d', true)
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2024-06-13 22:05:12] local.ERROR: Connection could not be established with host "mailhog:1025": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailhog failed: No such host is known.  {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 0): Connection could not be established with host \"mailhog:1025\": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailhog failed: No such host is known.  at D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php:154)
+[stacktrace]
+#0 [internal function]: Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\{closure}(2, 'stream_socket_c...', 'D:\\\\laragon\\\\www\\\\...', 157)
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php(157): stream_socket_client('mailhog:1025', 0, '', 60.0, 4, Resource id #843)
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(251): Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->initialize()
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(194): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\mailer\\Transport\\AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend(Object(Symfony\\Component\\Mailer\\SentMessage))
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(136): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send(Object(Symfony\\Component\\Mailer\\SentMessage), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(523): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send(Object(Symfony\\Component\\Mime\\Email), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(287): Illuminate\\Mail\\Mailer->sendSymfonyMessage(Object(Symfony\\Component\\Mime\\Email))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(207): Illuminate\\Mail\\Mailer->send(NULL, Array, Object(Closure))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\MailManager.php(554): Illuminate\\Mail\\Mailer->raw('Your transactio...', Object(Closure))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(338): Illuminate\\Mail\\MailManager->__call('raw', Array)
+#11 D:\\laragon\\www\\koncoo-test\\app\\Jobs\\ProcessTransaction.php(58): Illuminate\\Support\\Facades\\Facade::__callStatic('raw', Array)
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\ProcessTransaction->handle()
+#13 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call(Array)
+#18 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\ProcessTransaction))
+#19 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\ProcessTransaction))
+#20 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\ProcessTransaction), false)
+#22 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\ProcessTransaction))
+#23 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\ProcessTransaction))
+#24 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#25 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(App\\Jobs\\ProcessTransaction))
+#26 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Array)
+#27 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(425): Illuminate\\Queue\\Jobs\\Job->fire()
+#28 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(375): Illuminate\\Queue\\Worker->process('database', Object(Illuminate\\Queue\\Jobs\\DatabaseJob), Object(Illuminate\\Queue\\WorkerOptions))
+#29 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(173): Illuminate\\Queue\\Worker->runJob(Object(Illuminate\\Queue\\Jobs\\DatabaseJob), 'database', Object(Illuminate\\Queue\\WorkerOptions))
+#30 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(146): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#31 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(129): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#32 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#33 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#34 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#35 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#36 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#37 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#38 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#39 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#40 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#41 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#42 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#43 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#44 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#45 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#46 {main}
+"} 
+[2024-06-13 22:05:59] local.ERROR: Call to undefined function Laravel\Horizon\Console\pcntl_async_signals() {"exception":"[object] (Error(code: 0): Call to undefined function Laravel\\Horizon\\Console\\pcntl_async_signals() at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\horizon\\src\\Console\\HorizonCommand.php:50)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Horizon\\Console\\HorizonCommand->handle(Object(Laravel\\Horizon\\Repositories\\RedisMasterSupervisorRepository))
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Horizon\\Console\\HorizonCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2024-06-13 22:09:16] local.ERROR: Call to undefined function Laravel\Horizon\Console\pcntl_async_signals() {"exception":"[object] (Error(code: 0): Call to undefined function Laravel\\Horizon\\Console\\pcntl_async_signals() at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\horizon\\src\\Console\\HorizonCommand.php:50)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Horizon\\Console\\HorizonCommand->handle(Object(Laravel\\Horizon\\Repositories\\RedisMasterSupervisorRepository))
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Horizon\\Console\\HorizonCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2024-06-13 22:11:30] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it {"exception":"[object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(45): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', 'root', Array)
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1181): call_user_func(Object(Closure))
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\ManagesTransactions.php(177): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\ManagesTransactions.php(143): Illuminate\\Database\\Connection->handleBeginTransactionException(Object(PDOException))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\ManagesTransactions.php(117): Illuminate\\Database\\Connection->createTransaction()
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\ManagesTransactions.php(24): Illuminate\\Database\\Connection->beginTransaction()
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\DatabaseQueue.php(223): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(342): Illuminate\\Queue\\DatabaseQueue->pop('default')
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(351): Illuminate\\Queue\\Worker->Illuminate\\Queue\\{closure}('default')
+#13 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Worker.php(159): Illuminate\\Queue\\Worker->getNextJob(Object(Illuminate\\Queue\\DatabaseQueue), 'default')
+#14 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(146): Illuminate\\Queue\\Worker->daemon('database', 'default', Object(Illuminate\\Queue\\WorkerOptions))
+#15 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Console\\WorkCommand.php(129): Illuminate\\Queue\\Console\\WorkCommand->runWorker('database', 'default')
+#16 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Queue\\Console\\WorkCommand->handle()
+#17 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#19 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#20 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#21 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#22 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#24 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Queue\\Console\\WorkCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 {main}
+"} 
+[2024-06-13 22:12:07] local.ERROR: Call to undefined function Laravel\Horizon\Console\pcntl_async_signals() {"exception":"[object] (Error(code: 0): Call to undefined function Laravel\\Horizon\\Console\\pcntl_async_signals() at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\horizon\\src\\Console\\HorizonCommand.php:50)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Horizon\\Console\\HorizonCommand->handle(Object(Laravel\\Horizon\\Repositories\\RedisMasterSupervisorRepository))
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Horizon\\Console\\HorizonCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2024-06-13 22:12:57] local.ERROR: Call to undefined function Laravel\Horizon\Console\pcntl_async_signals() {"exception":"[object] (Error(code: 0): Call to undefined function Laravel\\Horizon\\Console\\pcntl_async_signals() at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\horizon\\src\\Console\\HorizonCommand.php:50)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Horizon\\Console\\HorizonCommand->handle(Object(Laravel\\Horizon\\Repositories\\RedisMasterSupervisorRepository))
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Horizon\\Console\\HorizonCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2024-06-13 22:14:35] local.ERROR: Call to undefined function Laravel\Horizon\Console\pcntl_async_signals() {"exception":"[object] (Error(code: 0): Call to undefined function Laravel\\Horizon\\Console\\pcntl_async_signals() at D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\horizon\\src\\Console\\HorizonCommand.php:50)
+[stacktrace]
+#0 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Horizon\\Console\\HorizonCommand->handle(Object(Laravel\\Horizon\\Repositories\\RedisMasterSupervisorRepository))
+#1 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#6 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Command\\Command.php(291): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#7 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(152): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Horizon\\Console\\HorizonCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 D:\\laragon\\www\\koncoo-test\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 D:\\laragon\\www\\koncoo-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 D:\\laragon\\www\\koncoo-test\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
