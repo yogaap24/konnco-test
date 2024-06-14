@@ -16,3 +16,5 @@ yarn-error.log
 /.idea
 /.vscode
 /storage/logs/*.log
+supervisord.log
+supervisord.pid
