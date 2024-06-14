@@ -15,6 +15,7 @@ Langkah ketiga, duplikat file `.env.example` dan ubah namanya menjadi `.env`, at
 Langkah keempat, **generate kunci aplikasi Laravel** dengan perintah `php artisan key:generate`. Pastikan file `.env` terkonfigurasi dengan benar, khususnya untuk setup database dan Redis sesuai kebutuhan aplikasi Anda.
 
 Langkah kelima, untuk memastikan koneksi database, jalankan `php artisan db:monitor` dan lakukan **migrasi database** dengan perintah `php artisan migrate --seed` untuk melakukan migrasi database dan seeder.
+
 > **ℹ️ Info:** kata sandi untuk semua user atau pengguna dari seeder adalah ```password```.
 
 Langkah keenam, **instal Passport untuk autentikasi** dengan `php artisan passport:install --force`. Pastikan semua pertanyaan dijawab dengan `yes`.
@@ -52,5 +53,11 @@ APP_URL=
 APP_HOST=
 IMAGE_NAME=
 ```
+Serta jangan lupa ubah email pada ```/traefik/acme.json``` dengan email anda.
+> **ℹ️ Info:** untuk login traefik anda bisa mengaksesnya dengan cara ``traefik.app_host``, kemudian usernya adalah ``admin`` dan passwordnya ```passadmin```
+
+
 Setelah itu, jalankan perintah berikut untuk memulai layanan Docker:
 ```docker-compose up -d```
+
+> **ℹ️ Info:** Jika anda memutuskan untuk menggunakan docker maka ``php artisan horizon`` dan ``php artisan queue:work`` akan berjalan secara otomatis dibackground sejak awal.

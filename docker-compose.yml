@@ -1,5 +1,56 @@
 version: '3'
 services:
+    #Traefik Service
+    traefik:
+        image: traefik:v2.5
+        container_name: ${IMAGE_NAME}-${APP_ENV}-traefik
+        restart: unless-stopped
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+            - ./traefik/acme.json:/acme.json
+            - ./traefik/traefik.yml:/traefik.yml:ro
+        networks:
+            - proxy
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.traefik.entrypoints=http"
+            - "traefik.http.routers.traefik.rule=Host(`traefik.${APP_HOST}`)"
+            - "traefik.http.middlewares.traefik-auth.basicauth.users= admin:$$apr1$$7Cv/1br7$$CSFTb8U3RkNHCkqW1EA5p."
+            - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
+            - "traefik.http.routers.traefik.middlewares=traefik-https-redirect"
+            - "traefik.http.routers.traefik-secure.entrypoints=https"
+            - "traefik.http.routers.traefik-secure.rule=Host(`traefik.${APP_HOST}`)"
+            - "traefik.http.routers.traefik-secure.middlewares=traefik-auth"
+            - "traefik.http.routers.traefik-secure.tls=true"
+            - "traefik.http.routers.traefik-secure.tls.certresolver=http"
+            - "traefik.http.routers.traefik-secure.service=api@internal"
+
+    #Postgres Service
+    postgres:
+        image: postgres:12
+        container_name: ${IMAGE_NAME}-${APP_ENV}-postgres
+        restart: unless-stopped
+        environment:
+            POSTGRES_DB: ${DB_DATABASE}
+            POSTGRES_USER: ${DB_USERNAME}
+            POSTGRES_PASSWORD: ${DB_PASSWORD}
+        volumes:
+            - konnco-database-data:/var/lib/postgresql/data
+        networks:
+            - konnco-database-network
+
+    #Redis Service
+    redis:
+        image: redis:latest
+        container_name: ${IMAGE_NAME}-${APP_ENV}-redis
+        restart: unless-stopped
+        networks:
+            - konnco-database-network
+
+    #Application Service
     application:
         build:
             context: .
@@ -11,12 +62,20 @@ services:
         environment:
             SERVICE_NAME: ${IMAGE_NAME}-${APP_ENV}-application
             SERVICE_TAGS: dev
+            APP_ENV: ${APP_ENV}
+            APP_DEBUG: ${APP_DEBUG}
+            DB_CONNECTION: pgsql
+            DB_HOST: postgres
+            DB_PORT: 5432
+            DB_DATABASE: ${DB_DATABASE}
+            DB_USERNAME: ${DB_USERNAME}
+            DB_PASSWORD: ${DB_PASSWORD}
         working_dir: /var/www
         volumes:
             - ./:/var/www
             - /var/www/vendor
         networks:
-            - database-network
+            - konnco-database-network
             - proxy
         labels:
             - "traefik.enable=true"
@@ -34,7 +93,13 @@ services:
 
 #Docker Networks
 networks:
-    database-network:
-        external: true
+    konnco-database-network:
+        name: konnco-database-network
+        driver: bridge
     proxy:
-        external: true
+        name: proxy
+        driver: bridge
+
+#Docker Volumes
+volumes:
+    konnco-database-data:

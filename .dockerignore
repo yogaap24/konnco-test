@@ -1,0 +1,7 @@
+# Ignore files and directories not needed in Docker image
+/traefik
+/.git
+/storage/*.key
+/storage/*.crt
+/storage/*.pem
+/storage/logs/*.log
